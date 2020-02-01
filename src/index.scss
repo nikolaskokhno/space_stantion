@@ -5,7 +5,7 @@
 
 .app {
   height: 100vh;
-  margin: 50px 0;
+  padding: 50px 0;
 }
 
 /*  LOCATION COMPONENT */
@@ -35,6 +35,19 @@
   p {
     margin: 0;
     font-style: italic;
+  }
+}
+
+/* MAP COMPONENTS */
+.map {
+  border: 1px solid black;
+
+  .mark {
+    background-color: black;
+    width: 5vh;
+    color: #fff;
+    font-weight: bold;
+    border: 2px solid red;
   }
 }
 

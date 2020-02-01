@@ -1,6 +1,7 @@
 import React from 'react';
 import Location from "./components/Location";
 import UTStime from "./components/UTStime";
+import Map from "./components/Map";
 import People from "./components/Peoples";
 
 class App extends React.Component {
@@ -39,7 +40,7 @@ class App extends React.Component {
           </div>
           <div className="row pt-3">
             <div className="col-md-8">
-              todo-map
+              <Map location={this.state.location} />
             </div>
             <div className="col-md-4">
               <People />
