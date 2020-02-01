@@ -1,5 +1,6 @@
 import React from 'react';
 import Location from "./components/Location";
+import UTStime from "./components/UTStime";
 
 class App extends React.Component {
 
@@ -27,8 +28,13 @@ class App extends React.Component {
     return (
       <div className="app">
         <div className="container">
-          <div className="col-md-8">
-            <Location location={this.state.location} />
+          <div className="row">
+            <div className="col-md-8">
+              <Location location={this.state.location} />
+            </div>
+            <div className="col-md-4">
+              <UTStime />
+            </div>
           </div>
         </div>
       </div>

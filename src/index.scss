@@ -8,7 +8,23 @@
   margin: 50px 0;
 }
 
+/*  LOCATION COMPONENT */
 .location {
+  border: 1px solid black;
+  padding: 10px;
+
+  h5 {
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0;
+    font-style: italic;
+  }
+}
+
+/* UTC TIME COMPONENT */
+.utc-time {
   border: 1px solid black;
   padding: 10px;
 
