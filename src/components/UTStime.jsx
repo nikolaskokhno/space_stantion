@@ -1,4 +1,5 @@
 import React from "react";
+import moment from "moment";
 
 export default class UTCtime extends React.Component {
     
@@ -29,11 +30,9 @@ export default class UTCtime extends React.Component {
             <div className="utc-time">
                 <h5>
                     Current UTC time:&nbsp;   
-                    {this.state.date.getUTCHours()}:
-                    {this.state.date.getUTCMinutes()}:
-                    {this.state.date.getUTCSeconds()}
+                    <span>{moment().utc().format('h:mm:ss')}</span>
                 </h5>
-                <p>{this.state.date.getUTCMonth()}</p>
+                <p>{moment().utc().format('dddd DD MMMM YYYY')}</p>
             </div>
         );
     }
